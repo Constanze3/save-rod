@@ -1,0 +1,37 @@
+{
+	"schemaVersion": 1,
+	"id": "save_rod",
+	"version": "${version}",
+	"name": "save_rod",
+	"description": "Save rod saves your stuff (and your day)!",
+	"authors": [
+		"Constanzee"
+	],
+	"license": "CC0-1.0",
+	"icon": "assets/save_rod/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+          "com.constanzee.SaveRod"
+		],
+		"client": [
+			"com.constanzee.SaveRodClient"
+		]
+	},
+	"mixins": [
+		"save_rod.mixins.json",
+		{
+			"config": "save_rod.client.mixins.json",
+			"environment": "client"
+		}
+	],
+	"depends": {
+		"fabricloader": ">=0.16.2",
+		"minecraft": "~1.21.1",
+		"java": ">=21",
+		"fabric-api": "*"
+	},
+	"suggests": {
+		"another-mod": "*"
+	}
+}

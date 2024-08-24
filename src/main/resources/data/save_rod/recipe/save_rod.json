@@ -1,0 +1,20 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+        " #/",
+        "#/#",
+        "/# "
+    ],
+    "key": {
+        "#": {
+            "item": "minecraft:redstone"
+        },
+        "/": {
+            "item": "minecraft:blaze_rod"
+        }
+    },
+    "result": {
+        "id": "save_rod:save_rod",
+        "count": 1
+    }
+}
